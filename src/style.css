@@ -21,24 +21,43 @@ body {
 
 .profile {
   background-color: white;
-  width: 35%;
+  width: 40%;
+  border-radius: 10px;
+  border: 1px solid #ffffff40;
+}
+
+.info {
+  background-color: white;
+  width: 60%;
   border-radius: 10px;
 }
-.about-me {
-  background-color: white;
-  width: 65%;
-  border-radius: 10px;
+
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+
+.image .profile-pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0.4);
 }
 
 @media (max-width: 576px) {
   .row {
     flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .profile,
-  .about-me {
-    width: 70%;
-
+  .info {
+    width: 80%;
     margin: 10px;
   }
 }
