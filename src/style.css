@@ -141,6 +141,25 @@ body {
   padding: 0;
 }
 
+.contact {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.contact .platform {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.contact .platform img:hover {
+  width: 35px;
+  border: black solid 1px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0.4);
+}
+
 @media (max-width: 576px) {
   .row {
     flex-direction: column;
@@ -163,6 +182,6 @@ body {
 @media (max-width: 1024px) {
   .card-list .card-item .card-image {
     width: 100%;
-    height: 200px;
+    height: 230px;
   }
 }
